@@ -1,0 +1,23 @@
+[project]
+name = "duckdb-playground"
+version = "0.1.0"
+description = "Experimenting with duckdb and dbt-duckdb"
+authors = [
+    {name = "jeff skoldberg", email = "jeff@gmdata.co"},
+]
+dependencies = [
+    "dbt-core>=1.8.1",
+    "dbt-duckdb>=1.8.1",
+    "duckdb>=0.10.2",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
