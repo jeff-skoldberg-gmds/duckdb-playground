@@ -18,9 +18,11 @@ RUN pip install pdm
 COPY pdm.lock pyproject.toml /usr/src/app/
 COPY README.md /usr/src/app/
 
-
 # Install dependencies from the lock file
 RUN pdm sync -r
+
+# Activate the virtual environment
+RUN echo "source $(pdm info --env --no-site-packages)/bin/activate" > ~/.bashrc
 
 # Copy the rest of your application's code
 COPY . /usr/src/app

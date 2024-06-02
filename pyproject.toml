@@ -21,4 +21,4 @@ build-backend = "pdm.backend"
 
 
 [tool.pdm]
-distribution = true
+use_venv = true
