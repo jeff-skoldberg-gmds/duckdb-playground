@@ -2,12 +2,16 @@
     "name": "duckdb-playground",
     "context": "..",
     "dockerFile": "Dockerfile",
-    "settings": { 
-        "terminal.integrated.shell.linux": "/bin/bash"
+    "mounts": [
+        "source=${localEnv:HOME}/.dbt/profiles.yml,target=/root/.dbt/profiles.yml,type=bind"
+      ],    
+      "settings": {
+        "python.terminal.activateEnvInCurrentTerminal": true,
+        "python.defaultInterpreterPath": ".venv/bin/python",
     },
     "extensions": [
         "ms-python.python",
     ],
-    "postCreateCommand": "pdm install",
+
     "remoteUser": "root"
 }
