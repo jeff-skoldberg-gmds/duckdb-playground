@@ -1,6 +1,6 @@
 {
     "name": "duckdb-playground",
-    "context": "..",
+    "context": ".",
     "dockerFile": "Dockerfile",
     "mounts": [
         "source=${localEnv:HOME}/.dbt/profiles.yml,target=/root/.dbt/profiles.yml,type=bind"
