@@ -20,7 +20,7 @@ COPY README.md /usr/src/app/
 
 
 # Install dependencies from the lock file
-RUN pdm sync
+RUN pdm sync -r
 
 # Copy the rest of your application's code
 COPY . /usr/src/app
