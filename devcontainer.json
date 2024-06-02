@@ -4,14 +4,13 @@
     "dockerFile": "Dockerfile",
     "mounts": [
         "source=${localEnv:HOME}/.dbt/profiles.yml,target=/root/.dbt/profiles.yml,type=bind"
-      ],    
-      "settings": {
+    ],    
+    "settings": {
         "python.terminal.activateEnvInCurrentTerminal": true,
         "python.defaultInterpreterPath": ".venv/bin/python",
     },
     "extensions": [
         "ms-python.python",
     ],
-
     "remoteUser": "root"
 }
