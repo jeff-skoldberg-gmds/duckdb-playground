@@ -5,12 +5,13 @@
     "mounts": [
         "source=${localEnv:HOME}/.dbt/profiles.yml,target=/root/.dbt/profiles.yml,type=bind"
       ],    
-    "settings": { 
-        "terminal.integrated.shell.linux": "/bin/bash"
+      "settings": {
+        "python.terminal.activateEnvInCurrentTerminal": true,
+        "python.defaultInterpreterPath": ".venv/bin/python",
     },
     "extensions": [
         "ms-python.python",
     ],
-    "postCreateCommand": "python -m venv .venv && . .venv/bin/activate && pdm sync",
+
     "remoteUser": "root"
 }
