@@ -1,0 +1,32 @@
+playing_with_duckdb:
+  outputs:
+    gmdata_s3:
+      type: duckdb
+      path: dev.duckdb
+      schema: analytics
+      extensions:
+        - httpfs
+        - parquet
+      settings:
+        s3_region: {{ env_var('gmdata_s3_region') }}
+        s3_access_key_id: {{ env_var('gmdata_s3_access_key') }}
+        s3_secret_access_key: {{ env_var('gmdata_s3_secret_key') }}  
+      threads: 1
+
+    motherduck:
+      type: duckdb
+      extensions:
+        - httpfs
+        - parquet
+      settings:
+        s3_region: {{ env_var('gmdata_s3_region') }}
+        s3_access_key_id: {{ env_var('gmdata_s3_access_key') }}
+        s3_secret_access_key: {{ env_var('gmdata_s3_secret_key') }}  
+      path: {{ env_var('motherduck_token') }}
+      schema: analytics
+      threads: 4
+
+  target: gmdata_s3
+
+config:
+  send_anonymous_usage_stats: False  
