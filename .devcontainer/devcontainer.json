@@ -17,6 +17,6 @@
         "ms-python.python",
         "innoverio.vscode-dbt-power-user"
     ],
-    "postCreateCommand": "pdm install",    
+
     "remoteUser": "root"
 }
