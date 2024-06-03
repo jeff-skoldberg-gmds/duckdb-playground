@@ -25,7 +25,7 @@ COPY pdm.lock pyproject.toml /usr/src/app/
 COPY README.md /usr/src/app/
 
 # Install the dependencies
-RUN pdm install
+# RUN pdm install
 
 # Copy the rest of your application's code
 COPY . /usr/src/app
