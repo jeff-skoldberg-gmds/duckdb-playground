@@ -32,5 +32,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   playing_with_duckdb:
     # Config indicated by + and applies to all files under models/example/
-    example:
+    gmdata_s3:
       +materialized: view
+
+flags:
+  send_anonymous_usage_stats: False
