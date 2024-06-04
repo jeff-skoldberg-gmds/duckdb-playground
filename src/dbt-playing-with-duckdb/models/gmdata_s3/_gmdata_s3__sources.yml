@@ -1,5 +1,5 @@
 sources:
-  - name: external_source
+  - name: gmdata_s3
     meta:
       external_location: "s3://gmds-sample-data/mrp_csv_data/mrp_data_*.csv"
     tables:
