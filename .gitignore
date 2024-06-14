@@ -1,6 +1,7 @@
 .venv-linux
 .user.yml
 *.csv
+!src/dbt-playing-with-duckdb/models/csv_to_parquet/data.csv
 *.parquet
 *.duckdb
 
