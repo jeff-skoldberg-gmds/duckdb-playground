@@ -1,0 +1,12 @@
+sources:
+  - name: local_csvs
+    meta:
+      external_location: "models/csv_to_parquet_etc/data.csv"
+    tables:
+      - name: data
+
+  - name: local_parquets
+    meta:
+      external_location: "models/csv_to_parquet_ect/data.parquet"
+    tables:
+      - name: data      
