@@ -3,10 +3,10 @@ sources:
     meta:
       external_location: "models/csv_to_parquet_etc/data.csv"
     tables:
-      - name: data
+      - name: csv_data
 
   - name: local_parquets
     meta:
-      external_location: "models/csv_to_parquet_ect/data.parquet"
+      external_location: "models/csv_to_parquet_etc/data.parquet"
     tables:
-      - name: data      
+      - name: parquet_data      
