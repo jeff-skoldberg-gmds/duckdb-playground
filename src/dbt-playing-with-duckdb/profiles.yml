@@ -1,6 +1,6 @@
 playing_with_duckdb:
   outputs:
-    gmdata_s3:
+    s3:
       type: duckdb
       path: dev.duckdb
       schema: analytics
@@ -20,5 +20,5 @@ playing_with_duckdb:
       schema: analytics
       threads: 4
 
-  target: gmdata_s3
+  target: s3
 
