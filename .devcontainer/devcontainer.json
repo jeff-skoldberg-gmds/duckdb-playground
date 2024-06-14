@@ -13,6 +13,10 @@
     "settings": {
         "python.terminal.activateEnvInCurrentTerminal": true,
         "python.defaultInterpreterPath": "/usr/src/app/.venv/bin/python",
+        "files.associations": {
+            "*.sql": "dbt",
+            "*.yml": "dbt"
+        }
     },
     "extensions": [
         "ms-python.python",
