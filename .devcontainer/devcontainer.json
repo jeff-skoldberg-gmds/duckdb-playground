@@ -23,6 +23,6 @@
         "innoverio.vscode-dbt-power-user",
         "github.copilot"
     ],
-    "postCreateCommand": "git config --global --add safe.directory /workspaces/duckdb-playground",
+    "postCreateCommand": "git config --global --add safe.directory /workspaces/duckdb-playground/src/dbt-playing-with-duckdb",
     "remoteUser": "root"
 }
