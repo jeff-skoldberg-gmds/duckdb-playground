@@ -15,7 +15,8 @@
     },
     "extensions": [
         "ms-python.python",
-        "innoverio.vscode-dbt-power-user"
+        "innoverio.vscode-dbt-power-user",
+        "github.copilot"
     ],
 
     "remoteUser": "root"
