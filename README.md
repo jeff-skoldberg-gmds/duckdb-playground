@@ -22,4 +22,4 @@
 ## Jeff to do
 - get something with aws sso to work.
 - file patern on the blockchain data.
-- get power user 
+- get power user fixed
