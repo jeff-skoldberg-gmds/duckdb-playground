@@ -1,0 +1,1 @@
+docker build -t duckdb-playground-image:v1.0 .

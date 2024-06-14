@@ -1,0 +1,31 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
+{
+	"name": "duckdb-playground-devcontainer",
+	"build": {
+		// Sets the run context to one level up instead of the .devcontainer folder.
+		"context": "..",
+		// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
+		"dockerfile": "Dockerfile"
+	},
+    "mounts": [
+    "source=${localWorkspaceFolder},target=/usr/src/app,type=bind,consistency=cached"
+],
+
+    "settings": {
+        "python.terminal.activateEnvInCurrentTerminal": true,
+        "python.defaultInterpreterPath": "/usr/src/app/.venv/bin/python",
+        "files.associations": {
+            "*.sql": "jinja-sql",
+            "*.yml": "jinja-yaml"
+        },
+        "terminal.integrated.cwd": "/workspaces/duckdb-playground/src/dbt-playing-with-duckdb"
+    },
+    "extensions": [
+        "ms-python.python",
+        "innoverio.vscode-dbt-power-user",
+        "github.copilot"
+    ],
+    "postCreateCommand": "git config --global --add safe.directory /workspaces/duckdb-playground/src/dbt-playing-with-duckdb && cd /workspaces/duckdb-playground/src/dbt-playing-with-duckdb",
+    "remoteUser": "root"
+}

@@ -1,0 +1,6 @@
+sources:
+  - name: eth_s3
+    meta:
+      external_location: "s3://aws-public-blockchain/v1.0/eth/transactions/date=2017-05-30/*.parquet"
+    tables:
+      - name: eth_transactions
