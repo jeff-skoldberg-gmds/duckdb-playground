@@ -7,10 +7,7 @@ playing_with_duckdb:
       extensions:
         - httpfs
         - parquet
-      settings:
-        s3_region: "{{ env_var('GMDATA_S3_REGION') }}"
-        s3_access_key_id: "{{ env_var('GMDATA_S3_ACCESS_KEY') }}"
-        s3_secret_access_key: "{{ env_var('GMDATA_S3_SECRET_KEY') }}"
+
       threads: 1
 
     motherduck:
@@ -18,11 +15,8 @@ playing_with_duckdb:
       extensions:
         - httpfs
         - parquet
-      settings:
-        s3_region: "{{ env_var('GMDATA_S3_REGION') }}"
-        s3_access_key_id: "{{ env_var('GMDATA_S3_ACCESS_KEY') }}"
-        s3_secret_access_key: "{{ env_var('GMDATA_S3_SECRET_KEY') }}"
-      path: "{{ env_var('MOTHERDUCK_TOKEN') }}"
+
+
       schema: analytics
       threads: 4
 
