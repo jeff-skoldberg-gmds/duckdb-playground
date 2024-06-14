@@ -6,8 +6,9 @@
 		// Sets the run context to one level up instead of the .devcontainer folder.
 		"context": "..",
 		// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
-		"dockerfile": "../Dockerfile"
+		"dockerfile": "Dockerfile"
 	},
+    "workspaceFolder": "/workspace/src/dbt-playing-with-duckdb",
 
     "settings": {
         "python.terminal.activateEnvInCurrentTerminal": true,
@@ -18,6 +19,6 @@
         "innoverio.vscode-dbt-power-user",
         "github.copilot"
     ],
-
+    "postCreateCommand": "git config --global --add safe.directory /workspaces/duckdb-playground",
     "remoteUser": "root"
 }
