@@ -8,7 +8,6 @@
 		// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
 		"dockerfile": "Dockerfile"
 	},
-    "workspaceFolder": "/workspaces/duckdb-playground/src/dbt-playing-with-duckdb",
 
     "settings": {
         "python.terminal.activateEnvInCurrentTerminal": true,
